@@ -42,8 +42,10 @@ class ManagementSystem:
 
         for employee in self.employees:
             if(employee.emp_id == emp_id):
+                print("1", employee.emp_id)
+                print("2",self.employees.employee.emp_id)
                 self.employees.remove(employee)
-
+                
         pass
 
     def add_project(self, project):
