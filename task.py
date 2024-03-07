@@ -15,7 +15,11 @@ class Task:
         status (str): The status of the task.
         project (Project): The project associated with the task.
     """
-
+    task_id = ""
+    description = ""
+    deadline = ""
+    status = ""
+    project = ""  
     def __init__(self, task_id, description, deadline, status, project):
         """
         Initialize a Task object.
@@ -27,4 +31,13 @@ class Task:
             status (str): The status of the task.
             project (Project): The project associated with the task.
         """
+
+        self.task_id = task_id
+        self.description = description
+        self.deadline = deadline
+        self.status = status
+        self.project = project 
+
+
+
         pass
